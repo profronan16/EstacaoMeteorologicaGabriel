@@ -1,0 +1,302 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #03A9F4;
+    --background-color: #f5f6fa;
+    --card-background: #ffffff;
+    --text-color: #2c3e50;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tema Claro */
+.light-theme {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.light-theme .card {
+    background-color: var(--card-background);
+    box-shadow: var(--shadow);
+}
+
+/* Tema Escuro */
+.dark-theme {
+    background-color: #282b30;
+    color: #ffffff;
+}
+
+.dark-theme .card {
+    background-color: #1e2124;
+    box-shadow: var(--shadow);
+}
+
+.dark-theme .card-title,
+.dark-theme .big-value {
+    color: #ffffff;
+}
+
+.dark-theme .text-muted {
+    color: #a0a0a0 !important;
+}
+
+.dark-theme .btn-outline-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.dark-theme .btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: #282b30;
+}
+
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.header-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.main-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-title i {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.value-container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.big-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.unit {
+    font-size: 1.4rem;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.status-card {
+    text-align: center;
+}
+
+.status-icon {
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+    color: var(--primary-color);
+}
+
+/* Rosa dos Ventos */
+.wind-rose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    position: relative;
+}
+
+.compass {
+    width: 180px;
+    height: 180px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 70px solid var(--primary-color);
+    position: absolute;
+    transform-origin: center bottom;
+    transition: transform 0.5s ease;
+}
+
+/* Animações */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Controles dos Cards */
+.card-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-controls .btn-link {
+    color: #b4bcb5;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.card-controls .btn-link:hover {
+    color: #8a908b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .theme-toggle {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .big-value {
+        font-size: 3rem;
+    }
+
+    .status-icon {
+        font-size: 3.5rem;
+    }
+
+    .wind-rose {
+        height: 180px;
+    }
+
+    .compass {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Gráfico */
+#mainChart {
+    width: 100%;
+    height: 400px;
+}
+
+/* Botões de Período */
+.btn-group .btn {
+    padding: 0.5rem 1rem;
+}
+
+.btn-group .btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Última Atualização */
+.last-update {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Card Fixo */
+.card.locked {
+    cursor: default;
+}
+
+.card.locked:hover {
+    transform: none;
+    box-shadow: var(--shadow);
+}
+
+.card.locked .move-card {
+    display: none;
+}
+
+/* Card em Movimento */
+.card-ghost {
+    opacity: 0.5;
+    background: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    color: var(--text-color);
+    padding: 2rem 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .small {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.status-card .big-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color);
+} 
