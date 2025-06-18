@@ -1,19 +1,34 @@
 # Estação Meteorológica IFPR - Ivaiporã
 
-Dashboard para visualização de dados meteorológicos em tempo real + sistema de harware para envio das informações utlizando ESP32/Arduino Nano ESP32.
+Dashboard para visualização de dados meteorológicos em tempo real + sistema de harware para envio das informações utlizando ESP32/Arduino Nano ESP32 via protocolo http.
 
 ## Requisitos
 
-- PHP 7.4 ou superior
-- MySQL 5.7 ou superior
-- Servidor web (Apache/Nginx)
-- Navegador web moderno
+Hardware:
+1. ESP32 ou Arduino Nano ESP32 (ou equivalentes)
+2. DHT22 com abrigo externo
+3. Pluviômetro digital
+4. Anemômetro digital
+5. Biruta eletrônica
+6. Sensor de Pressão Barométrico BMP180
+7. Sensor de Luz UV GUVA-S12S
+8. LDR
 
-## Instalação
+Software:
+1. PHP 7.4 ou superior
+2. MySQL 5.7 ou superior
+3. Servidor web (Apache/Nginx)
+4. Navegador web moderno
+
+## Instalação parte harware
+1. Copie ou baixe o código estmet.ino com suas bibliotecas equivalentes
+2. Siga as instruções de montagem dos harwares conforme o código
+
+## Instalação parte servidor
 
 1. Clone este repositório para seu servidor web:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/gabclima/estmet.git
 ```
 
 2. Importe o banco de dados:
