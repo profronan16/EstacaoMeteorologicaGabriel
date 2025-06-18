@@ -21,7 +21,7 @@ Software:
 4. Navegador web moderno
 
 ## Instalação parte harware
-1. Copie ou baixe o código estmet.ino com suas bibliotecas equivalentes
+1. Copie ou baixe o código `estmet.ino` com suas bibliotecas equivalentes
 2. Siga as instruções de montagem dos harwares conforme o código
 
 ## Instalação parte servidor
