@@ -1,6 +1,6 @@
 # Estação Meteorológica IFPR - Ivaiporã
 
-Dashboard para visualização de dados meteorológicos em tempo real.
+Dashboard para visualização de dados meteorológicos em tempo real + sistema de harware para envio das informações utlizando ESP32/Arduino Nano ESP32.
 
 ## Requisitos
 
