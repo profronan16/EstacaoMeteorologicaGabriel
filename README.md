@@ -61,6 +61,8 @@ chmod 755 -R /caminho/para/o/projeto
 
 ## Estrutura do Projeto
 
+![Fluxograma](fluxograma.png)
+
 ```
 estmet/
 ├── arduino/
