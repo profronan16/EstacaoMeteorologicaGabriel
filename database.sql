@@ -1,6 +1,6 @@
 -- Criação do banco de dados
-CREATE DATABASE IF NOT EXISTS estacao_meteorologica;
-USE estacao_meteorologica;
+CREATE DATABASE IF NOT EXISTS estmet;
+USE estmet;
 
 -- Criação da tabela de dados meteorológicos
 CREATE TABLE IF NOT EXISTS dados_meteorologicos (

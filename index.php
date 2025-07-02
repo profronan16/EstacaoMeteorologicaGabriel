@@ -41,7 +41,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
 
         <div id="dashboard" class="row g-4">
             <!-- Card Status -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3" id="card-status">
                 <div class="card status-card">
                     <div class="card-body text-center">
                         <h5 class="card-title">
@@ -57,7 +57,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Temperatura -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-temperatura">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -79,7 +79,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Umidade -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-umidade">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -101,7 +101,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card UV -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-uv">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -123,7 +123,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Luminosidade -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-luminosidade">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -145,7 +145,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Vento -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-vento">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -167,7 +167,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Direção do Vento -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-direcaoVento">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -191,7 +191,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
             </div>
 
             <!-- Card Precipitação -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3"  id="card-precipitacao">
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-start">
@@ -214,7 +214,7 @@ $dataFormatada = $data->format('d/m/Y H:i:s');
         </div>
 
         <!-- Gráfico Principal -->
-        <div class="card mt-4">
+        <div class="card mt-4"  id="card-historico">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h5 class="card-title">
